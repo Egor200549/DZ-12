@@ -1,0 +1,90 @@
+body {
+    color: #fff;
+    background: #17181c;
+    font-family: sans-serif;
+}
+
+.image {
+    width: 100%;
+}
+
+header {
+    padding: 10px 30px;
+}
+
+#buttons {
+    display: flex;
+    overflow-y: auto;
+    gap: 10px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .copyright {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+footer .copyright a {
+    color: #444;
+}
+
+footer .copyright a:hover {
+    color: #555;
+}
+
+footer .copyright:before {
+    content: '©';
+}
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+@media (width <= 576px) {
+    .news {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.news__item {
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button__source {
+    font-size: 20px;
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 4px;
+    background-color: cadetblue;
+    color: white;
+    box-shadow: 0 0 3px 0px cadetblue;
+    transition: all 0.25s;
+    cursor: pointer;
+    text-wrap: nowrap;
+}
+
+.button__source:nth-child(2n + 1) {
+    background-color: darkcyan;
+    box-shadow: 0 0 3px 0px darkcyan;
+}
+
+.button__source:hover {
+    box-shadow: 0 0 15px 0px cadetblue;
+}
